@@ -104,7 +104,7 @@ In order to use this build of bash as your login shell,
 it must be added to /etc/shells.
 ==> Summary
 🍺  /usr/local/Cellar/bash/4.3.18: 59 files, 7.5M, built in 39 seconds
-bash --version | head -1 
+$ bash --version | head -1 
 GNU bash, version 4.3.18(1)-release (x86_64-apple-darwin12.5.0)
 $ sudo vi /etc/shells
 $ cat /etc/shells
