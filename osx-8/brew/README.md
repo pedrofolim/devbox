@@ -14,6 +14,39 @@ brew install dash
 ==> make
 ==> make install
 🍺   /usr/local/Cellar/dash/0.5.7: 5 files, 220K, built in 7 seconds
+man dash | head
+
+DASH(1)                   BSD General Commands Manual                  DASH(1)
+
+NAME
+     dash -- command interpreter (shell)
+
+SYNOPSIS
+     dash [-aCefnuvxIimqVEb] [+aCefnuvxIimqVEb] [-o option_name]
+          [+o option_name] [command_file [argument ...]]
+     dash -c [-aCefnuvxIimqVEb] [+aCefnuvxIimqVEb] [-o option_name]
+Joaquins-MacBook-Pro:devbox joaquinmenchaca$ man dash | head -20
+
+DASH(1)                   BSD General Commands Manual                  DASH(1)
+
+NAME
+     dash -- command interpreter (shell)
+
+SYNOPSIS
+     dash [-aCefnuvxIimqVEb] [+aCefnuvxIimqVEb] [-o option_name]
+          [+o option_name] [command_file [argument ...]]
+     dash -c [-aCefnuvxIimqVEb] [+aCefnuvxIimqVEb] [-o option_name]
+          [+o option_name] command_string [command_name [argument ...]]
+     dash -s [-aCefnuvxIimqVEb] [+aCefnuvxIimqVEb] [-o option_name]
+          [+o option_name] [argument ...]
+
+DESCRIPTION
+     dash is the standard command interpreter for the system.  The current
+     version of dash is in the process of being changed to conform with the
+     POSIX 1003.2 and 1003.2a specifications for the shell.  This version has
+     many features which make it appear similar in some respects to the Korn
+     shell, but it is not a Korn shell clone (see ksh(1)).  Only features des-
+
 ```
 
 Then for Korn shell:
