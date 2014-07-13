@@ -54,6 +54,8 @@ DESCRIPTION
 ## Korn Shell
 
 ```bash
+$ /bin/ksh --version
+  version         sh (AT&T Research) 93u 2011-02-08
 $ brew install ksh
 ==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/ksh-93u+.mountain_lion.bottle.1.tar.gz
 ######################################################################## 100.0%
@@ -63,11 +65,15 @@ We have agreed to the Eclipse Public License on your behalf.
 If this is unacceptable for any reason, please uninstall.
 ==> Summary
 🍺   /usr/local/Cellar/ksh/93u+: 4 files, 1.5M
+$ ksh --version
+  version         sh (AT&T Research) 93u+ 2012-08-01
 ```
 
 ## Bash 4.3 (Not default Bash 3.x)
 
 ```bash
+$ bin/bash --version | head -1 
+GNU bash, version 3.2.48(1)-release (x86_64-apple-darwin12)
 $ brew install bash
 ==> Downloading http://ftpmirror.gnu.org/bash/bash-4.3.tar.gz
 ######################################################################## 100.0%
@@ -98,6 +104,8 @@ In order to use this build of bash as your login shell,
 it must be added to /etc/shells.
 ==> Summary
 🍺  /usr/local/Cellar/bash/4.3.18: 59 files, 7.5M, built in 39 seconds
+bash --version | head -1 
+GNU bash, version 4.3.18(1)-release (x86_64-apple-darwin12.5.0)
 $ sudo vi /etc/shells
 $ cat /etc/shells
 # List of acceptable shells for chpass(1).
