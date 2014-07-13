@@ -7,7 +7,7 @@ This is a set of snippets used to capture installation of packages uses HomeBrew
 I wanted to fetch a pure POSIX shell to test out portable scripts:
 
 ```bash
-brew install dash
+$ brew install dash
 ==> Downloading http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.7.tar.gz
 ######################################################################## 100.0%
 ==> ./configure --prefix=/usr/local/Cellar/dash/0.5.7 --with-libedit --enable-fnmatch --enable-glob
@@ -52,7 +52,7 @@ DESCRIPTION
 Then for Korn shell:
 
 ```bash
-brew install ksh
+$ brew install ksh
 ==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/ksh-93u+.mountain_lion.bottle.1.tar.gz
 ######################################################################## 100.0%
 ==> Pouring ksh-93u+.mountain_lion.bottle.1.tar.gz
@@ -67,7 +67,7 @@ And of course, Bourne Again Shell 4.x, as Mac OS X comes with icky old version o
 
 
 ```bash
-brew install bash
+$ brew install bash
 ==> Downloading http://ftpmirror.gnu.org/bash/bash-4.3.tar.gz
 ######################################################################## 100.0%
 ==> Downloading https://gist.githubusercontent.com/jacknagel/c1cf23775c774e2b4b6d/raw/abd9bd4289bb443684ba26d5a2d3fb9449bbfa90/bash-4.3.18.diff
