@@ -30,44 +30,48 @@ This is a vehicle to test various operating systems and packaging environments. 
 
 I have explored the Interix environment on Windows [http://en.wikipedia.org/wiki/Windows_Services_for_UNIX], which is supported as an extra add-on (either free or with later versions of Windows at an expensive cost).  This environment includes tools that are not generally available outside the Interix environment, and since it is not freely available, it will not be tested.
 
-## Target Environments and Tools
+# Target Environments and Tools
 
-### Unix Shell Environment and Unix Tools
+## Unix Shell Environment and Unix Tools
 
 These are the lovable shell and shell tools, such as awk, sed, and grep, that one comes to expect in working with Unix or Linux.  
 
-#### POSIX Shell and POSIX Tools
+### POSIX Shell and POSIX Tools
 
 The POSIX shell is essentially the classic Bourne Shell with enhancements to make it compatible with POSIX specification.  One can get a ash or dash to test out POSIX shell scripts.  
 
-#### Korn Shell and SVR Unix Tools
+### Korn Shell and SVR Unix Tools
 
 This is the Korn shell and tools that might be unique for SVR4 Unix environments, such as pax and nawk.  
 
-#### Bash and GNU Tools
+### Bash and GNU Tools
 
 This is Bourne Again Shell and various popular GNU tools such as Core-Utils and GNU bc.  
 
-### Scripting Languages
+## Scripting Languages
 
 Popular scripting languages like Perl, Python, PHP, and Ruby.  And throw in TCL for good measure.
 
-### Development Environment
+## Development Environment
 
 Compilers for C, C++, and Objective-C using GNU GCC.
 
-### Java Virtual Machine
+## Java Virtual Machine
 
 Environment to compile and run Java applications.
 
-#### Groovy
+### Groovy
 
 Groovy is a popular language used for automating build environments, web applications, and other chores.
 
-### CLR Virtual Machine
+## CLR Virtual Machine
 
 This will be Microsoft's .NET environment and Mono.
 
-#### PowerShell
+### PowerShell
 
 PowerShell as most may know is a scripting environment that runs on .NET (CLR VM).  This is Microsoft's designated scripting automation environment for Microsoft Windows operating system.  There is a movement to port PowerShell to non-Windows systems [https://github.com/Pash-Project/Pash].
+
+## Windows NT Only Environments
+
+On Windows environment only, grab the latest WSH (Windows Script Host) environment available. Windows Script Host supports a variety languages, with JScript and VBScript supported from Microsoft.  Occasionally, there is a need to use some script that has not yet been rewritten in Powershell or other language.
