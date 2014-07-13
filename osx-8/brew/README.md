@@ -1,0 +1,69 @@
+# Mac OS X 10.8 Snow Leopard and HomeBrew
+
+This is a set of snippets used to capture installation of packages uses HomeBrew as of July, 2014.  I specify the date because HomeBrew scripts and packages may change at any moment as they are fetched from the Internet.
+
+## Unix Shell and Unix Tools
+
+I wanted to fetch a pure POSIX shell to test out portable scripts:
+
+```bash
+brew install dash
+==> Downloading http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.7.tar.gz
+######################################################################## 100.0%
+==> ./configure --prefix=/usr/local/Cellar/dash/0.5.7 --with-libedit --enable-fnmatch --enable-glob
+==> make
+==> make install
+í ¼í½º  /usr/local/Cellar/dash/0.5.7: 5 files, 220K, built in 7 seconds
+```
+
+Then for Korn shell:
+
+```bash
+brew install ksh
+==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/ksh-93u+.mountain_lion.bottle.1.tar.gz
+######################################################################## 100.0%
+==> Pouring ksh-93u+.mountain_lion.bottle.1.tar.gz
+==> Caveats
+We have agreed to the Eclipse Public License on your behalf.
+If this is unacceptable for any reason, please uninstall.
+==> Summary
+í ¼í½º  /usr/local/Cellar/ksh/93u+: 4 files, 1.5M
+```
+
+And of course, Bourne Again Shell 4.x, as Mac OS X comes with icky old version of Bash 3.x:
+
+
+```bash
+brew install bash
+==> Downloading http://ftpmirror.gnu.org/bash/bash-4.3.tar.gz
+######################################################################## 100.0%
+==> Downloading https://gist.githubusercontent.com/jacknagel/c1cf23775c774e2b4b6d/raw/abd9bd4289bb443684ba26d5a2d3fb9449bbfa90/bash-4.3.18.diff
+######################################################################## 100.0%
+==> Patching
+patching file arrayfunc.c
+patching file bashline.c
+patching file externs.h
+patching file jobs.c
+patching file lib/glob/glob.c
+patching file lib/glob/gmisc.c
+patching file lib/readline/display.c
+patching file lib/readline/readline.c
+patching file lib/sh/shquote.c
+patching file parse.y
+patching file patchlevel.h
+patching file pcomplete.c
+patching file subst.c
+patching file test.c
+patching file trap.c
+patching file variables.c
+patching file y.tab.c
+==> ./configure --prefix=/usr/local/Cellar/bash/4.3.18 --with-installed-readline
+==> make install
+==> Caveats
+In order to use this build of bash as your login shell,
+it must be added to /etc/shells.
+==> Summary
+í ¼í½º  /usr/local/Cellar/bash/4.3.18: 59 files, 7.5M, built in 39 seconds
+```
+
+A patch is required to get Bash 4.3 to work on Mac OS X.  I will dig into this later.
