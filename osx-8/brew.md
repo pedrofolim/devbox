@@ -1,6 +1,6 @@
 # HomeBrew on Mountain Lion
 
-This is a set of snippets used to capture installation of packages uses HomeBrew on Mac OS X 10.8.5 (Snow Leopard) as of July, 2014.
+This is a set of snippets used to capture installation of packages uses HomeBrew on Mac OS X 10.8.5 (Mountain Lion) as of July, 2014.
 
 I specify the date because HomeBrew scripts and packages may change at any moment as they are fetched from the Internet.
 
