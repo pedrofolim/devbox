@@ -2,9 +2,9 @@
 
 This is a set of snippets used to capture installation of packages uses HomeBrew as of July, 2014.  I specify the date because HomeBrew scripts and packages may change at any moment as they are fetched from the Internet.
 
-## Unix Shell and Unix Tools
+# Unix Shell and Unix Tools
 
-### POSIX Shell for Portable Scripts
+## POSIX Shell for Portable Scripts
 
 ```bash
 $ brew install dash
