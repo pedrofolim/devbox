@@ -1,4 +1,4 @@
-# HomeBrew on Snow Leopard
+# HomeBrew on Mountain Lion
 
 This is a set of snippets used to capture installation of packages uses HomeBrew on Mac OS X 10.8.5 (Snow Leopard) as of July, 2014.
 
