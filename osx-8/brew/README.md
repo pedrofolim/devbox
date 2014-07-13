@@ -14,7 +14,7 @@ $ brew install dash
 ==> make
 ==> make install
 🍺   /usr/local/Cellar/dash/0.5.7: 5 files, 220K, built in 7 seconds
-man dash | head
+$ man dash | head -20
 
 DASH(1)                   BSD General Commands Manual                  DASH(1)
 
