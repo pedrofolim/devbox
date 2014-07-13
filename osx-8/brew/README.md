@@ -4,7 +4,7 @@ This is a set of snippets used to capture installation of packages uses HomeBrew
 
 ## Unix Shell and Unix Tools
 
-I wanted to fetch a pure POSIX shell to test out portable scripts:
+### POSIX Shell for Portable Scripts
 
 ```bash
 $ brew install dash
@@ -49,7 +49,7 @@ DESCRIPTION
 
 ```
 
-Then for Korn shell:
+## Korn Shell
 
 ```bash
 $ brew install ksh
@@ -63,8 +63,7 @@ If this is unacceptable for any reason, please uninstall.
 🍺   /usr/local/Cellar/ksh/93u+: 4 files, 1.5M
 ```
 
-And of course, Bourne Again Shell 4.x, as Mac OS X comes with icky old version of Bash 3.x:
-
+## Bash 4.3 (Not default Bash 3.x)
 
 ```bash
 $ brew install bash
