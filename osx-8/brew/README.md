@@ -13,7 +13,7 @@ brew install dash
 ==> ./configure --prefix=/usr/local/Cellar/dash/0.5.7 --with-libedit --enable-fnmatch --enable-glob
 ==> make
 ==> make install
-Ì†ºÌΩ∫  /usr/local/Cellar/dash/0.5.7: 5 files, 220K, built in 7 seconds
+üç∫   /usr/local/Cellar/dash/0.5.7: 5 files, 220K, built in 7 seconds
 ```
 
 Then for Korn shell:
@@ -27,7 +27,7 @@ brew install ksh
 We have agreed to the Eclipse Public License on your behalf.
 If this is unacceptable for any reason, please uninstall.
 ==> Summary
-Ì†ºÌΩ∫  /usr/local/Cellar/ksh/93u+: 4 files, 1.5M
+üç∫   /usr/local/Cellar/ksh/93u+: 4 files, 1.5M
 ```
 
 And of course, Bourne Again Shell 4.x, as Mac OS X comes with icky old version of Bash 3.x:
@@ -63,7 +63,7 @@ patching file y.tab.c
 In order to use this build of bash as your login shell,
 it must be added to /etc/shells.
 ==> Summary
-Ì†ºÌΩ∫  /usr/local/Cellar/bash/4.3.18: 59 files, 7.5M, built in 39 seconds
+üç∫  /usr/local/Cellar/bash/4.3.18: 59 files, 7.5M, built in 39 seconds
 ```
 
 A patch is required to get Bash 4.3 to work on Mac OS X.  I will dig into this later.
