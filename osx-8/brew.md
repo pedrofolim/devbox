@@ -339,7 +339,7 @@ Now we upgrade pip3 for python3.
 pip3 install --upgrade setuptools
 ```
 
-Which outputs the following:
+This will pull down the setuptools wheel file.
 
 ```
 Downloading/unpacking setuptools from https://pypi.python.org/packages/3.4/s/setuptools/setuptools-5.4.1-py2.py3-none-any.whl#md5=5b7b07029ad2285d1cbf809a8ceaea08
@@ -358,7 +358,7 @@ Next we install VirtualEnv to manage environments.
 pip3 install virtualenv
 ```
 
-Which does the following:
+This will pull down the latest wheel package file for virtualenv:
 
 ```
 Downloading/unpacking virtualenv
