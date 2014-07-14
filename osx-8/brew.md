@@ -11,7 +11,7 @@ I specify the date because HomeBrew scripts and packages may change at any momen
 Install a POSIX shell for Mac OS X.
 
 ```bash
-$ brew install dash
+brew install dash
 ```
 
 On my run, this fetched some tarball from Australia.
@@ -28,7 +28,7 @@ On my run, this fetched some tarball from Australia.
 Dash (Debian Ash) does not have a version parameter, so tested to see if it existed using man pages.  Sure enough man pages were installed.
 
 ```bash
-$ man dash | head -20
+man dash | head -20
 
 DASH(1)                   BSD General Commands Manual                  DASH(1)
 
@@ -60,7 +60,6 @@ DESCRIPTION
      POSIX 1003.2 and 1003.2a specifications for the shell.  This version has
      many features which make it appear similar in some respects to the Korn
      shell, but it is not a Korn shell clone (see ksh(1)).  Only features des-
-
 ```
 
 ## Korn Shell
@@ -68,14 +67,14 @@ DESCRIPTION
 The Korn shell available on Mac OS X is from 2011.
 
 ```bash
-$ /bin/ksh --version
+/bin/ksh --version
   version         sh (AT&T Research) 93u 2011-02-08
 ```
 
 Let's fetch something more recent.
 
 ```bash
-$ brew install ksh
+brew install ksh
 ```
 
 This fetches a precompiled bottle.
@@ -91,19 +90,31 @@ If this is unacceptable for any reason, please uninstall.
 🍺   /usr/local/Cellar/ksh/93u+: 4 files, 1.5M
 ```
 
-
+After installation, we can check the version.
 
 ```bash
-$ ksh --version
+ksh --version
   version         sh (AT&T Research) 93u+ 2012-08-01
 ```
 
 ## Bash 4.3 (Not default Bash 3.x)
 
+Check the existing version of Bash.
+
 ```bash
-$ bin/bash --version | head -1 
+bin/bash --version | head -1 
 GNU bash, version 3.2.48(1)-release (x86_64-apple-darwin12)
-$ brew install bash
+```
+
+Bash 3.2 is from 2006, let's get something more recent.
+
+```bash
+brew install bash
+```
+
+This will do a lot of work, such as downloading source, a patch, and compiling it.
+
+```bash
 ==> Downloading http://ftpmirror.gnu.org/bash/bash-4.3.tar.gz
 ######################################################################## 100.0%
 ==> Downloading https://gist.githubusercontent.com/jacknagel/c1cf23775c774e2b4b6d/raw/abd9bd4289bb443684ba26d5a2d3fb9449bbfa90/bash-4.3.18.diff
@@ -133,8 +144,18 @@ In order to use this build of bash as your login shell,
 it must be added to /etc/shells.
 ==> Summary
 🍺  /usr/local/Cellar/bash/4.3.18: 59 files, 7.5M, built in 39 seconds
-$ bash --version | head -1 
+```
+
+Now we check the version of bash.
+
+```bash
+bash --version | head -1 
 GNU bash, version 4.3.18(1)-release (x86_64-apple-darwin12.5.0)
+```
+
+We edit our shells to make it available.
+
+```bash
 $ sudo vi /etc/shells
 $ cat /etc/shells
 # List of acceptable shells for chpass(1).
@@ -155,8 +176,15 @@ A patch is required to get Bash 4.3 to work on Mac OS X.  I will dig into this l
 
 ## Python 2
 
+Let's grab a recent version of Python.
+
 ```bash
-$ brew install python
+brew install python
+```
+
+This fetches a pre-compiled bottle of Python and several components: readline 6.3.6, sqlite 3.8.5, gdbm 1.11, and openssl 1.0.1h.
+
+```
 ==> Installing dependencies for python: readline, sqlite, gdbm, openssl
 ==> Installing python dependency: readline
 ==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/readline-6.3.6.mountain_lion.bottle.tar.gz
@@ -255,7 +283,11 @@ Run `brew linkapps` to symlink these to /Applications.
 ==> /usr/local/Cellar/python/2.7.8/bin/python -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python/2.7.8/bin --install-lib=/usr/local/lib/p
 ==> Summary
 🍺  /usr/local/Cellar/python/2.7.8: 4654 files, 75M
+```
 
+Install VirtualEnv to manage Python versions.
+
+```bash
 $ pip install virtualenv
 Downloading/unpacking virtualenv
   Downloading virtualenv-1.11.6-py2.py3-none-any.whl (1.6MB): 1.6MB downloaded
@@ -268,6 +300,11 @@ Cleaning up...
 
 ```bash
 $ brew install python3
+```
+
+This will install Pyton 3.4.1 bottle, and also dependency of xz 5.0.5.
+
+```
 ==> Installing python3 dependency: xz
 ==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/xz-5.0.5.mountain_lion.bottle.3.tar.gz
 ######################################################################## 100.0%
@@ -294,8 +331,17 @@ Run `brew linkapps` to symlink these to /Applications.
 ==> /usr/local/Cellar/python3/3.4.1/bin/python3 -m ensurepip --upgrade
 ==> Summary
 🍺  /usr/local/Cellar/python3/3.4.1: 3845 files, 67M
+```
 
-$ pip3 install --upgrade setuptools
+Now we upgrade pip3 for python3.
+
+```bash
+pip3 install --upgrade setuptools
+```
+
+Which outputs the following:
+
+```
 Downloading/unpacking setuptools from https://pypi.python.org/packages/3.4/s/setuptools/setuptools-5.4.1-py2.py3-none-any.whl#md5=5b7b07029ad2285d1cbf809a8ceaea08
   Downloading setuptools-5.4.1-py2.py3-none-any.whl (528kB): 528kB downloaded
 Installing collected packages: setuptools
@@ -304,24 +350,44 @@ Installing collected packages: setuptools
       Successfully uninstalled setuptools
 Successfully installed setuptools
 Cleaning up...
+```
 
-$ pip3 install virtualenv
+Next we install VirtualEnv to manage environments.
+
+```bash
+pip3 install virtualenv
+```
+
+Which does the following:
+
+```
 Downloading/unpacking virtualenv
   Downloading virtualenv-1.11.6-py2.py3-none-any.whl (1.6MB): 1.6MB downloaded
 Installing collected packages: virtualenv
 Successfully installed virtualenv
 Cleaning up...
 
-$ virtualenv venv
+Use virtualenv to setup or list current version.  
+```bash
+virtualenv venv
 New python executable in venv/bin/python2.7
 Also creating executable in venv/bin/python
 Installing setuptools, pip...done.
 ```
 
+This is fine for now.  We want default python to run 2.7, and python3 for Python 3.4.
+
 ## Ruby 2
 
+Let's get Ruby.
+
 ```bash
-$ brew install ruby
+brew install ruby
+```
+
+This will run something like following.  After Python2 and Python3, we only have one dependency required, and that's libyaml 0.1.6.
+
+```
 ==> Installing ruby dependency: libyaml
 ==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/libyaml-0.1.6.mountain_lion.bottle.tar.gz
 ######################################################################## 100.0%
@@ -332,34 +398,67 @@ $ brew install ruby
 ######################################################################## 100.0%
 ==> Pouring ruby-2.1.2_2.mountain_lion.bottle.1.tar.gz
 🍺  /usr/local/Cellar/ruby/2.1.2_2: 942 files, 20M
+```
 
-$ ruby --version
+Let's check what version of Ruby we are running and what version of gem we have installed.
+
+```bash
+ruby --version
 ruby 2.1.2p95 (2014-05-08 revision 45877) [x86_64-darwin12.0]
 
-$ gem --version
+gem --version
 2.2.2
 ```
 
 # Web Clients
 
-$ brew cask install firefox
-==> We need to make Caskroom for the first time at /opt/homebrew-cask/Caskroom
-==> We'll set permissions properly so we won't need sudo in the future
-Password:
+## Mozilla Firefox
+
+For full graphical web applications, we will use Cask.  We can download and install Firefox through:
+
+```bash
+brew cask install firefox
+```
+
+This will install this in user called hansolo's Applications directory.
+
+```
 ==> Downloading https://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US
 ######################################################################## 100.0%
 ==> Symlinking App 'Firefox.app' to '/Users/hansolo/Applications/Firefox.app'
 🍺  firefox installed to '/opt/homebrew-cask/Caskroom/firefox/latest' (113 files, 141M)
+```
 
-$ brew cask install google-chrome
+## Google Chrome
+
+We can install Chrome through this command:
+
+```bash
+brew cask install google-chrome
+```
+
+Which does the folowing.
+
+```
 ==> Downloading https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
 ######################################################################## 100.0%
 ==> Symlinking App 'Google Chrome.app' to '/Users/hansolo/Applications/Google Chrome.app'
 🍺  google-chrome installed to '/opt/homebrew-cask/Caskroom/google-chrome/latest' (228 files, 151M)
+```
 
 # Editors
 
-$ brew cask install sublime-text
+## Sublime
+
+This can install the popular Sumblime text editor.
+
+```bash
+brew cask install sublime-text
+```
+
+Which will output something like the following:
+
+```
 ==> Caveats
 Cask sublime-text installs files under "/usr/local".  The presence of such
 files can cause warnings when running "brew doctor", which is considered
@@ -370,3 +469,4 @@ to be a bug in homebrew-cask.
 ==> Symlinking App 'Sublime Text 2.app' to '/Users/hansolo/Applications/Sublime Text 2.app'
 ==> Symlinking Binary 'subl' to '/usr/local/bin/subl'
 🍺  sublime-text installed to '/opt/homebrew-cask/Caskroom/sublime-text/2.0.2' (124 files, 26M)
+```
