@@ -1,6 +1,11 @@
 # Homebrew Meets Mountain Lion
 
-These are instructions for setting up Homebrew and Cask on Mac OS X 10.8.5 (Mountain Lion).
+These are instructions for setting up Homebrew and Cask on Mac OS X 10.8.5 (Mountain Lion).  This assumes the base system is installed:
+
+  * Mac OS X 18.8.5
+  * XCode 5.1.1 and agree to license
+  * XCode comand line tools (most recent applicable version)
+  * Java JDK 6 (most recent applicable Java 1.6 version from Apple)
 
 Homebrew is now probably the most popular package management sytsem, and Casket extends Homebrew to install full applications, such as Sublime, Chrome, and Firefox.
 
@@ -11,8 +16,17 @@ Therefore, these instructions and results are only applicable as of July 2014.
 On a side note, though Homebrew and Casket are very convenient, this throws a monkey wrench in testing.  To really perform real tests requires that the components do not change, as this introduces random variables into the system.  Having contents that can change on a whim goes against scientific methodology, as the control element is inconsistent. Thus the results cannot be fully trusted and in the worst case scenario can contribute to non-deterministic results.
 
 # Homebrew
-```
+
+The existing crusty Ruby on Mac OS X and be bootstrapped by doing the following command.
+
+```bash
 $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
+
+This will output something similar to the following.
+
+
+```bash
 ==> This script will install:
 /usr/local/bin/brew
 /usr/local/Library/...
@@ -28,8 +42,17 @@ Password:
 ==> Downloading and installing Homebrew...
 remote: Counting objects: 185728, done.
 remote: Compressing objects: 100% (50947/50947), done.
+```
 
+Next we run brew doctor to check out system and make sure everything is in order.
+
+```bash
 $ brew doctor
+```
+
+The results are vary widely depending on your system. This is the output on a new clean system with a volume formatted as Mac OS X (Journaled, case-sensivity).
+
+```bash
 Please note that these warnings are just used to help the Homebrew maintainers
 with debugging if you file an issue. If everything you use Homebrew for is
 working fine: please don't worry and just ignore them. Thanks!
@@ -40,8 +63,16 @@ The default OS X filesystem is case-insensitive. Please report any apparent prob
 
 # Cask
 
-```brew
+We use the installed HomeBrew to install Cask.
+
+```bash
 $ brew install caskroom/cask/brew-cask
+```
+
+This will yield the following.
+
+
+```bash
 Cloning into '/usr/local/Library/Taps/caskroom/homebrew-cask'...
 remote: Reusing existing pack: 46705, done.
 remote: Counting objects: 57, done.
