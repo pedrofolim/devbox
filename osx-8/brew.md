@@ -450,7 +450,7 @@ Which does the folowing.
 
 ## Sublime
 
-This can install the popular Sumblime text editor.
+This can install the popular Sublime text editor.
 
 ```bash
 brew cask install sublime-text
