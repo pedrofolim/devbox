@@ -8,14 +8,26 @@ I specify the date because HomeBrew scripts and packages may change at any momen
 
 ## POSIX Shell for Portable Scripts
 
+Install a POSIX shell for Mac OS X.
+
 ```bash
 $ brew install dash
+```
+
+On my run, this fetched some tarball from Australia.
+
+```bash
 ==> Downloading http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.7.tar.gz
 ######################################################################## 100.0%
 ==> ./configure --prefix=/usr/local/Cellar/dash/0.5.7 --with-libedit --enable-fnmatch --enable-glob
 ==> make
 ==> make install
 🍺   /usr/local/Cellar/dash/0.5.7: 5 files, 220K, built in 7 seconds
+```
+
+Dash (Debian Ash) does not have a version parameter, so tested to see if it existed using man pages.  Sure enough man pages were installed.
+
+```bash
 $ man dash | head -20
 
 DASH(1)                   BSD General Commands Manual                  DASH(1)
@@ -53,10 +65,22 @@ DESCRIPTION
 
 ## Korn Shell
 
+The Korn shell available on Mac OS X is from 2011.
+
 ```bash
 $ /bin/ksh --version
   version         sh (AT&T Research) 93u 2011-02-08
+```
+
+Let's fetch something more recent.
+
+```bash
 $ brew install ksh
+```
+
+This fetches a precompiled bottle.
+
+```bash
 ==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/ksh-93u+.mountain_lion.bottle.1.tar.gz
 ######################################################################## 100.0%
 ==> Pouring ksh-93u+.mountain_lion.bottle.1.tar.gz
@@ -65,6 +89,11 @@ We have agreed to the Eclipse Public License on your behalf.
 If this is unacceptable for any reason, please uninstall.
 ==> Summary
 🍺   /usr/local/Cellar/ksh/93u+: 4 files, 1.5M
+```
+
+
+
+```bash
 $ ksh --version
   version         sh (AT&T Research) 93u+ 2012-08-01
 ```
