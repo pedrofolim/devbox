@@ -1,0 +1,59 @@
+$ gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
+Target: x86_64-apple-darwin12.5.0
+Thread model: posix
+
+$ cpp --version
+Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
+Target: x86_64-apple-darwin12.5.0
+Thread model: posix
+
+$ perl -version
+
+This is perl 5, version 12, subversion 4 (v5.12.4) built for darwin-thread-multi-2level
+(with 2 registered patches, see perl -V for more detail)
+
+Copyright 1987-2010, Larry Wall
+
+Perl may be copied only under the terms of either the Artistic License or the
+GNU General Public License, which may be found in the Perl 5 source kit.
+
+Complete documentation for Perl, including FAQ lists, should be found on
+this system using "man perl" or "perldoc perl".  If you have access to the
+Internet, point your browser at http://www.perl.org/, the Perl Home Page.
+
+$ perl -version | head -3
+
+This is perl 5, version 12, subversion 4 (v5.12.4) built for darwin-thread-multi-2level
+(with 2 registered patches, see perl -V for more detail)
+
+$ ruby -version
+ruby 1.8.7 (2012-02-08 patchlevel 358) [universal-darwin12.0]
+-e:1: undefined local variable or method `rsion' for main:Object (NameError)
+
+$ python --version
+Python 2.7.2
+
+$ bash --version
+GNU bash, version 3.2.48(1)-release (x86_64-apple-darwin12)
+Copyright (C) 2007 Free Software Foundation, Inc.
+
+$ ksh --version
+  version         sh (AT&T Research) 93u 2011-02-08
+
+$ echo 'puts $tcl_version;exit 0' | tclsh
+8.5
+
+$ java -version
+java version "1.6.0_65"
+Java(TM) SE Runtime Environment (build 1.6.0_65-b14-466.1-11M4716)
+Java HotSpot(TM) 64-Bit Server VM (build 20.65-b04-466.1, mixed mode)
+
+$ php -v
+PHP 5.3.26 (cli) (built: Jul  7 2013 19:05:08) 
+Copyright (c) 1997-2013 The PHP Group
+Zend Engine v2.3.0, Copyright (c) 1998-2013 Zend Technologies
+
+$ git --version
+git version 1.8.5.2 (Apple Git-48)

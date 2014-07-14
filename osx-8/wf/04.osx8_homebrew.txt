@@ -1,0 +1,24 @@
+$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/Library/...
+/usr/local/share/man/man1/brew.1
+
+Press RETURN to continue or any other key to abort
+==> /usr/bin/sudo /bin/mkdir /usr/local
+Password:
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local
+==> /usr/bin/sudo /bin/mkdir /Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Library/Caches/Homebrew
+==> Downloading and installing Homebrew...
+remote: Counting objects: 185728, done.
+remote: Compressing objects: 100% (50947/50947), done.
+
+$ brew doctor
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry and just ignore them. Thanks!
+
+Warning: The filesystem on / appears to be case-sensitive.
+The default OS X filesystem is case-insensitive. Please report any apparent problems.

@@ -1,0 +1,61 @@
+$ brew install caskroom/cask/brew-cask
+
+$ brew install caskroom/cask/brew-cask
+Cloning into '/usr/local/Library/Taps/caskroom/homebrew-cask'...
+remote: Reusing existing pack: 46705, done.
+remote: Counting objects: 57, done.
+remote: Compressing objects: 100% (57/57), done.
+remote: Total 46762 (delta 27), reused 6 (delta 0)
+Receiving objects: 100% (46762/46762), 14.78 MiB | 904.00 KiB/s, done.
+Resolving deltas: 100% (28955/28955), done.
+Checking connectivity... done.
+Tapped 1 formula
+==> Cloning https://github.com/caskroom/homebrew-cask.git
+Cloning into '/Library/Caches/Homebrew/brew-cask--git'...
+remote: Counting objects: 1895, done.
+remote: Compressing objects: 100% (1866/1866), done.
+remote: Total 1895 (delta 30), reused 624 (delta 20)
+Receiving objects: 100% (1895/1895), 5.01 MiB | 965.00 KiB/s, done.
+Resolving deltas: 100% (30/30), done.
+Checking connectivity... done.
+Note: checking out '8db73ff33341f25fe3a44fb82a2b3bc83617e81f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b new_branch_name
+
+==> Checking out tag v0.37.1
+🍺  /usr/local/Cellar/brew-cask/0.37.1: 1730 files, 6.8M, built in 9 seconds
+
+
+$ brew cask install firefox
+==> We need to make Caskroom for the first time at /opt/homebrew-cask/Caskroom
+==> We'll set permissions properly so we won't need sudo in the future
+Password:
+==> Downloading https://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US
+######################################################################## 100.0%
+==> Symlinking App 'Firefox.app' to '/Users/hansolo/Applications/Firefox.app'
+🍺  firefox installed to '/opt/homebrew-cask/Caskroom/firefox/latest' (113 files, 141M)
+
+$ brew cask install google-chrome
+==> Downloading https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+######################################################################## 100.0%
+==> Symlinking App 'Google Chrome.app' to '/Users/hansolo/Applications/Google Chrome.app'
+🍺  google-chrome installed to '/opt/homebrew-cask/Caskroom/google-chrome/latest' (228 files, 151M)
+
+$ brew cask install sublime-text
+==> Caveats
+Cask sublime-text installs files under "/usr/local".  The presence of such
+files can cause warnings when running "brew doctor", which is considered
+to be a bug in homebrew-cask.
+
+==> Downloading http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.2.dmg
+######################################################################## 100.0%
+==> Symlinking App 'Sublime Text 2.app' to '/Users/hansolo/Applications/Sublime Text 2.app'
+==> Symlinking Binary 'subl' to '/usr/local/bin/subl'
+🍺  sublime-text installed to '/opt/homebrew-cask/Caskroom/sublime-text/2.0.2' (124 files, 26M)

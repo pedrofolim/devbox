@@ -1,0 +1,28 @@
+$ pip3 install --upgrade setuptools
+Downloading/unpacking setuptools from https://pypi.python.org/packages/3.4/s/setuptools/setuptools-5.4.1-py2.py3-none-any.whl#md5=5b7b07029ad2285d1cbf809a8ceaea08
+  Downloading setuptools-5.4.1-py2.py3-none-any.whl (528kB): 528kB downloaded
+Installing collected packages: setuptools
+  Found existing installation: setuptools 2.1
+    Uninstalling setuptools:
+      Successfully uninstalled setuptools
+Successfully installed setuptools
+Cleaning up...
+
+$ pip install virtualenv
+Downloading/unpacking virtualenv
+  Downloading virtualenv-1.11.6-py2.py3-none-any.whl (1.6MB): 1.6MB downloaded
+Installing collected packages: virtualenv
+Successfully installed virtualenv
+Cleaning up...
+
+$ pip3 install virtualenv
+Downloading/unpacking virtualenv
+  Downloading virtualenv-1.11.6-py2.py3-none-any.whl (1.6MB): 1.6MB downloaded
+Installing collected packages: virtualenv
+Successfully installed virtualenv
+Cleaning up...
+
+$ virtualenv venv
+New python executable in venv/bin/python2.7
+Also creating executable in venv/bin/python
+Installing setuptools, pip...done.

@@ -1,0 +1,55 @@
+$ brew install python3
+==> Installing python3 dependency: xz
+==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/xz-5.0.5.mountain_lion.bottle.3.tar.gz
+######################################################################## 100.0%
+==> Pouring xz-5.0.5.mountain_lion.bottle.3.tar.gz
+🍺  /usr/local/Cellar/xz/5.0.5: 58 files, 1.5M
+==> Installing python3
+==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/python3-3.4.1.mountain_lion.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring python3-3.4.1.mountain_lion.bottle.tar.gz
+==> Caveats
+Pip has been installed. To update it
+  pip3 install --upgrade pip
+
+You can install Python packages with
+  pip3 install <package>
+
+They will install into the site-package directory
+  /usr/local/lib/python3.4/site-packages
+
+See: https://github.com/Homebrew/homebrew/wiki/Homebrew-and-Python
+
+.app bundles were installed.
+Run `brew linkapps` to symlink these to /Applications.
+==> /usr/local/Cellar/python3/3.4.1/bin/python3 -m ensurepip --upgrade
+==> Summary
+🍺  /usr/local/Cellar/python3/3.4.1: 3845 files, 67M
+
+$ ls -l
+total 80976
+drwxr-xr-x  2 hansolo  admin       374 Jul 13 17:49 Formula
+-rw-r--r--  1 hansolo  admin    136451 Jul 13 17:37 gdbm-1.11.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin   3185742 Jul 13 17:37 openssl-1.0.1h.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin  18836115 Jul 13 17:37 python-2.7.8.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin  17164032 Jul 13 17:50 python3-3.4.1.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin    764714 Jul 13 17:37 readline-6.3.6.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin    938558 Jul 13 17:37 sqlite-3.8.5.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin    418558 Jul 13 17:49 xz-5.0.5.mountain_lion.bottle.3.tar.gz
+
+$ ls -l Formula
+total 0
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 gdbm.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 makedepend.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 openssl.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 pkg-config.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 python.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:49 python3.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 readline.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 sqlite.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:49 xz.brewing
+
+$ python3 --version
+Python 3.4.1
+devboxen:Homebrew hansolo$ pip3 --version
+pip 1.5.6 from /usr/local/lib/python3.4/site-packages (python 3.4)

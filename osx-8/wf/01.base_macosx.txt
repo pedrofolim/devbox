@@ -1,0 +1,124 @@
+1. Update Mac OS X
+
+curl -O http://support.apple.com/downloads/DL1676/en_US/OSXUpdCombo10.8.5.dmg
+
+#############################################################
+# HOW-TO - Get Default Java on Clean Mac OS X 10.8.3
+#############################################################
+# 1. Download Java
+#    NOTE: Attempted curl -O without success
+#      Test with wget or applescript on safari as altnerative
+#
+#    SOURCE: http://support.apple.com/downloads/DL1572/en_US/JavaForOSX2014-001.dmg
+#############################################################
+# 2. Mount Downloaded Volume
+hdiutil mount $HOME/Downloads/JavaForOSX2014-001.dmg
+#############################################################
+# 3. Install the Package
+sudo -S installer -verbose -pkg "/Volumes/Java for OS X 2014-001/JavaForOSX.pkg" -target /
+#############################################################
+# 4. Test Results
+java -version
+java version "1.6.0_65"
+Java(TM) SE Runtime Environment (build 1.6.0_65-b14-466.1-11M4716)
+Java HotSpot(TM) 64-Bit Server VM (build 20.65-b04-466.1, mixed mode)
+#############################################################
+# 5. Umount Volume
+hdiutil unmount "/Volumes/Java for OS X 2014-001"
+#############################################################
+
+
+#############################################################
+# HOW-TO - Install Mac OS X 10.8.5 Combo on Mac OS X 10.8.3
+#############################################################
+# 1. Download Mac OS X Update Combo
+#    NOTE: Attempted curl -O without success
+#      Test with wget or applescript on safari as altnerative
+#
+#    SOURCE: http://support.apple.com/downloads/DL1676/en_US/OSXUpdCombo10.8.5.dmg
+#############################################################
+# 2. Mount Downloaded Volume
+hdiutil mount $HOME/Downloads/OSXUpdCombo10.8.5.dmg
+#############################################################
+# 3. Install the Package
+sudo -S installer -verbose -pkg "/Volumes/OS X 10.8.5 Update Combo/OSXUpdCombo10.8.5.pkg" -target /
+…
+installer: The software was successfully installed......
+installer: The upgrade was successful.
+installer: The install requires restarting now.
+#############################################################
+# 4. Umount Volume (optional if restarting)
+hdiutil unmount "/Volumes/OS X 10.8.5 Update Combo"
+#############################################################
+# 5. Restart Computer?
+#    NOTE: Any method will do.  
+#     WARNING: shutdown -r now seem to cause system to freeze.
+#
+osascript -e 'tell app "System Events" to restart'
+
+
+#############################################################
+# HOW-TO - Install Xcode 5.1.1 on Mac OS X 10.8.5
+#############################################################
+# 1. Get Xcode 5.1.1, which is latest as of 2014-06
+#    from https://developer.apple.com/downloads/index.action
+#    NOTE: This requires having a developer account
+#    SOURCE FILE: xcode_5.1.1.dmg
+#############################################################
+# 2. Mount Downloaded Volume
+hdiutil mount $HOME/Downloads/xcode_5.1.1.dmg
+#############################################################
+# 3. Install Xcode
+# NOTE: Assumes Xcode is not installed already
+sudo cp -R "/Volumes/Xcode/Xcode.app" /Applications
+#############################################################
+# 4. Agree to license
+sudo xcodebuild -license
+#############################################################
+# 5. Test Results
+/Applications/Xcode.app/Contents/Developer/usr/bin/gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
+Target: x86_64-apple-darwin12.5.0
+Thread model: posix
+#############################################################
+
+#############################################################
+# HOW-TO - Install Xcode 5.1.1 CLT on Mac OS X 10.8.5
+#############################################################
+# 6. Download Latest Command Line Tools
+#    which is April 2014 as of 2014-06
+# SOURCE FILE: command_line_tools_for_osx_mountain_lion_april_2014.dmg
+#############################################################
+# 7. Mount Downloaded Volume
+hdiutil mount $HOME/Downloads/command_line_tools_for_osx_mountain_lion_april_2014.dmg
+#############################################################
+# 8. Install Selected Packages
+sudo -S installer -verbose -pkg "/Volumes/Command Line Tools (Mountain Lion)/Command Line Tools (Mountain Lion).mpkg" -target /
+#############################################################
+# 9. Unmount Volumes
+hdiutil unmount /Volumes/Xcode
+hdiutil unmount "/Volumes/Command Line Tools (Mountain Lion)"
+#############################################################
+# 10. Test Results
+cd $HOME
+gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
+Target: x86_64-apple-darwin12.5.0
+Thread model: posix
+#############################################################
+
+
+
+
+http://apple.stackexchange.com/questions/103571/using-the-terminal-command-to-shutdown-restart-and-sleep-my-mac
+
+
+
+NOTES: Resources
+http://commandlinemac.blogspot.com/2008/12/using-hdiutil.html
+http://apple.stackexchange.com/questions/113489/unattended-installation-of-pkg-file
+http://apple.stackexchange.com/questions/57039/how-make-safari-download-pdf-files-instead-of-opening-them-in-page
+http://stackoverflow.com/questions/7277448/download-a-file-through-safari-with-applescript
+http://commandlinemac.blogspot.com/2008/12/installing-dmg-application-from-command.html

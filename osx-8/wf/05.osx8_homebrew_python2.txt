@@ -1,0 +1,129 @@
+$ brew install python
+==> Installing dependencies for python: readline, sqlite, gdbm, openssl
+==> Installing python dependency: readline
+==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/readline-6.3.6.mountain_lion.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring readline-6.3.6.mountain_lion.bottle.tar.gz
+==> Caveats
+This formula is keg-only, so it was not symlinked into /usr/local.
+
+OS X provides the BSD libedit library, which shadows libreadline.
+In order to prevent conflicts when programs look for libreadline we are
+defaulting this GNU Readline installation to keg-only.
+
+Generally there are no consequences of this for you. If you build your
+own software and it requires this formula, you'll need to add to your
+build variables:
+
+    LDFLAGS:  -L/usr/local/opt/readline/lib
+    CPPFLAGS: -I/usr/local/opt/readline/include
+
+==> Summary
+🍺  /usr/local/Cellar/readline/6.3.6: 40 files, 2.1M
+==> Installing python dependency: sqlite
+==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/sqlite-3.8.5.mountain_lion.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring sqlite-3.8.5.mountain_lion.bottle.tar.gz
+==> Caveats
+This formula is keg-only, so it was not symlinked into /usr/local.
+
+Mac OS X already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+OS X provides an older sqlite3.
+
+Generally there are no consequences of this for you. If you build your
+own software and it requires this formula, you'll need to add to your
+build variables:
+
+    LDFLAGS:  -L/usr/local/opt/sqlite/lib
+    CPPFLAGS: -I/usr/local/opt/sqlite/include
+
+==> Summary
+🍺  /usr/local/Cellar/sqlite/3.8.5: 9 files, 2.1M
+==> Installing python dependency: gdbm
+==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/gdbm-1.11.mountain_lion.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring gdbm-1.11.mountain_lion.bottle.tar.gz
+🍺  /usr/local/Cellar/gdbm/1.11: 16 files, 420K
+==> Installing python dependency: openssl
+==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/openssl-1.0.1h.mountain_lion.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring openssl-1.0.1h.mountain_lion.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the system
+keychain. To add additional certificates, place .pem files in
+  /usr/local/etc/openssl/certs
+
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+This formula is keg-only, so it was not symlinked into /usr/local.
+
+Mac OS X already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+The OpenSSL provided by OS X is too old for some software.
+
+Generally there are no consequences of this for you. If you build your
+own software and it requires this formula, you'll need to add to your
+build variables:
+
+    LDFLAGS:  -L/usr/local/opt/openssl/lib
+    CPPFLAGS: -I/usr/local/opt/openssl/include
+
+==> Summary
+🍺  /usr/local/Cellar/openssl/1.0.1h: 429 files, 15M
+==> Installing python
+==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/python-2.7.8.mountain_lion.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring python-2.7.8.mountain_lion.bottle.tar.gz
+==> Caveats
+Setuptools and Pip have been installed. To update them
+  pip install --upgrade setuptools
+  pip install --upgrade pip
+
+You can install Python packages with
+  pip install <package>
+
+They will install into the site-package directory
+  /usr/local/lib/python2.7/site-packages
+
+See: https://github.com/Homebrew/homebrew/wiki/Homebrew-and-Python
+
+.app bundles were installed.
+Run `brew linkapps` to symlink these to /Applications.
+==> /usr/local/Cellar/python/2.7.8/bin/python -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python/2.7.8/bin --install-lib=/usr/local/lib/p
+==> /usr/local/Cellar/python/2.7.8/bin/python -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python/2.7.8/bin --install-lib=/usr/local/lib/p
+==> Summary
+🍺  /usr/local/Cellar/python/2.7.8: 4654 files, 75M
+
+$ ls -l /Library/Caches/Homebrew
+total 46624
+drwxr-xr-x  2 hansolo  admin       306 Jul 13 17:36 Formula
+-rw-r--r--  1 hansolo  admin    136451 Jul 13 17:37 gdbm-1.11.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin   3185742 Jul 13 17:37 openssl-1.0.1h.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin  18836115 Jul 13 17:37 python-2.7.8.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin    764714 Jul 13 17:37 readline-6.3.6.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin    938558 Jul 13 17:37 sqlite-3.8.5.mountain_lion.bottle.tar.gz
+
+$ ls -l /Library/Caches/Homebrew/Formula
+total 0
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 gdbm.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 makedepend.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 openssl.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 pkg-config.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 python.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 readline.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 sqlite.brewing
+
+$ pip --version
+pip 1.5.6 from /usr/local/Cellar/python/2.7.8/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/pip-1.5.6-py2.7.egg (python 2.7)
+
+$ python --version
+Python 2.7.2
+
+$ PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+$ python --version
+Python 2.7.8
+

@@ -1,0 +1,61 @@
+$ brew install git
+==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/git-2.0.1.mountain_lion.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring git-2.0.1.mountain_lion.bottle.tar.gz
+==> Caveats
+The OS X keychain credential helper has been installed to:
+  /usr/local/bin/git-credential-osxkeychain
+
+The 'contrib' directory has been installed to:
+  /usr/local/share/git-core/contrib
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completion has been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/git/2.0.1: 1326 files, 32M
+
+$ ls -l Formula
+total 0
+-rw-r--r--  1 hansolo  admin  0 Jul 13 18:04 brew-cask.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 gdbm.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 18:11 git.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:52 libyaml.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 makedepend.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 openssl.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 pkg-config.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 python.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:49 python3.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 readline.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:52 ruby.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:36 sqlite.brewing
+-rw-r--r--  1 hansolo  admin  0 Jul 13 17:49 xz.brewing
+devboxen:Homebrew hansolo$ ls -l 
+total 363328
+drwxr-xr-x  2 hansolo  admin       170 Jul 13 18:10 Casks
+drwxr-xr-x  2 hansolo  admin       510 Jul 13 18:11 Formula
+drwxr-xr-x  9 hansolo  admin       680 Jul 13 18:04 brew-cask--git
+-rw-r--r--@ 1 hansolo  admin  60366702 Jul 13 18:07 firefox-latest
+-rw-r--r--  1 hansolo  admin    136451 Jul 13 17:37 gdbm-1.11.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin  11026066 Jul 13 18:11 git-2.0.1.mountain_lion.bottle.tar.gz
+-rw-r--r--@ 1 hansolo  admin  58901947 Jul 13 18:09 google-chrome-latest.dmg
+-rw-r--r--  1 hansolo  admin    109082 Jul 13 17:52 libyaml-0.1.6.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin   3185742 Jul 13 17:37 openssl-1.0.1h.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin  18836115 Jul 13 17:37 python-2.7.8.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin  17164032 Jul 13 17:50 python3-3.4.1.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin    764714 Jul 13 17:37 readline-6.3.6.mountain_lion.bottle.tar.gz
+-rw-r--r--  1 hansolo  admin   6139522 Jul 13 17:53 ruby-2.1.2_2.mountain_lion.bottle.1.tar.gz
+-rw-r--r--  1 hansolo  admin    938558 Jul 13 17:37 sqlite-3.8.5.mountain_lion.bottle.tar.gz
+-rw-r--r--@ 1 hansolo  admin   8014924 Jul 13 18:10 sublime-text-2.0.2.dmg
+-rw-r--r--  1 hansolo  admin    418558 Jul 13 17:49 xz-5.0.5.mountain_lion.bottle.3.tar.gz
+
+ls -l /opt/homebrew-cask/Caskroom
+total 0
+drwxr-xr-x  3 hansolo  staff  102 Jul 13 18:07 firefox
+drwxr-xr-x  3 hansolo  staff  102 Jul 13 18:09 google-chrome
+drwxr-xr-x  3 hansolo  staff  102 Jul 13 18:10 sublime-text
+
+$ /usr/local/Cellar/git/2.0.1/bin/git --version
+git version 2.0.1
