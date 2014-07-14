@@ -97,7 +97,7 @@ ksh --version
   version         sh (AT&T Research) 93u+ 2012-08-01
 ```
 
-## Bash 4.3 (Not default Bash 3.x)
+## Bash 4
 
 Check the existing version of Bash.
 
