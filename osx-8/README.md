@@ -9,9 +9,7 @@ These are instructions for setting up Homebrew and Cask on Mac OS X 10.8.5 (Moun
 
 Homebrew is now probably the most popular package management sytsem, and Casket extends Homebrew to install full applications, such as Sublime, Chrome, and Firefox.
 
-Both of these, Homebrew and Casket, fetches content off the Internet, and as such the contents of the packages can change at any moment.  
-
-Therefore, these instructions and results are only applicable as of July 2014.
+Both of these, Homebrew and Casket, fetch content off the Internet, and as such the contents of the packages can change at any moment.  Therefore, these instructions and results are only applicable as of July 2014.
 
 On a side note, though Homebrew and Casket are very convenient, this throws a monkey wrench in testing.  To really perform real tests requires that the components do not change, as this introduces random variables into the system.  Having contents that can change on a whim goes against scientific methodology, as the control element is inconsistent. Thus the results cannot be fully trusted and in the worst case scenario can contribute to non-deterministic results.
 
