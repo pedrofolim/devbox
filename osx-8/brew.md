@@ -25,7 +25,7 @@ On my run, this fetched some tarball from Australia.
 🍺   /usr/local/Cellar/dash/0.5.7: 5 files, 220K, built in 7 seconds
 ```
 
-Dash (Debian Ash) does not have a version parameter, so tested to see if it existed using man pages.  Sure enough man pages were installed.
+Dash (Debian Ash) does not have a version parameter, so to test this, we can check for man pages.  Sure enough man pages were installed.
 
 ```bash
 man dash | head -20
