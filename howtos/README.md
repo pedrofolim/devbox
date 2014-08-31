@@ -13,6 +13,6 @@ The second part to this, is after documenting a recipee on how to install an env
 
 ## HOWTOs
 
-### OS X (Darwin XNU kernel with BSD Unix process model)
+### OS X (Darwin Mach XNU kernel with BSD Unix process model)
 
 * [Installing Compilers with XCode](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.xcode.md) - These are instructions for getting XCode on OS X 10.8.5.
