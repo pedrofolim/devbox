@@ -15,4 +15,4 @@ The second part to this, is after documenting a recipee on how to install an env
 
 ### OS X (Mach with BSD Unix personality and customizations)
 
-[Installing Compilers with XCode](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.xcode.md)
+* [Installing Compilers with XCode](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.xcode.md)

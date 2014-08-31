@@ -1,6 +1,6 @@
 # The Dev Box / OS X:  Getting XCode
 
-In order to get anywhere in life on a computer you need some compiler, and on OS X this is certainly true.  You need compilers to install numerous open source software available on the Internet.  Package managers such as MacPorts or Homebrew require these compilers.
+In order to get anywhere in life on a computer you need some compilers, and on OS X this is certainly true.  You need compilers to install numerous open source software available on the Internet.  Package managers such as [MacPorts](https://www.macports.org/) or [Homebrew](http://brew.sh/) require these compilers.
 
 On OS X, the compilers called Xcode are available either through *App Store* or by registering and downloading the software from https://developer.apple.com/.
 
@@ -54,7 +54,7 @@ Follow these steps from the command line:
 /Applications/Xcode.app/Contents/Developer/usr/bin/gcc --version
 ```
 
-This will print out
+This will print out:
 
 ```
 Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
@@ -70,6 +70,7 @@ Follow these steps from the command line:
 ```bash
 hdiutil mount $HOME/Downloads/command_line_tools_for_osx_mountain_lion_april_2014.dmg
 sudo -S installer -verbose -pkg "/Volumes/Command Line Tools (Mountain Lion)/Command Line Tools (Mountain Lion).mpkg" -target /
+```
 
 ### STEP 6: Remove Mounted Volumes
 
