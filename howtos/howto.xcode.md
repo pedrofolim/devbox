@@ -36,7 +36,7 @@ Follow these steps from the command line:
 ```bash
 hdiutil mount $HOME/Downloads/xcode_5.1.1.dmg
 sudo cp -R "/Volumes/Xcode/Xcode.app" /Applications
-
+```
 
 ### STEP 3: Agree to License
 
