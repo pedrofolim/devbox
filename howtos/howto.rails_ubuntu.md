@@ -39,7 +39,7 @@ rvm rubygems current
 
 ## STEP 3: Install Bundler and Rake
 
-Bunlder manages Ruby GEM library dependencies, and Rake is a popular build tool that is needed for Ruby on Rails.
+[Bundler](http://bundler.io/) manages Ruby GEM library dependencies, and [Rake](https://github.com/jimweirich/rake) is a popular build tool that is needed for [Ruby-On-Rails](http://rubyonrails.org/).
 
 ```bash
 gem install bundler
