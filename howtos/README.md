@@ -19,3 +19,8 @@ The second part to this, is after documenting a recipee on how to install an env
   * [XCode 5.1.1 on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.xcode.md) - These are instructions for getting XCode 5.1.1 on OS X 10.8.5.
 * Ruby
   * [Ruby, RVM, Bundler with MacPorts](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.ruby_macports.md) - These are instructions that I crafted back in 2013 for installing Ruby 1.9 on MacPorts with RVM and Bundler.
+
+### Ubuntu (Debian Linux)
+
+* Ruby-On-Rails
+  * [Getting Ruby-on-Rails on Ubuntu](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.rails_ubuntu.md)
