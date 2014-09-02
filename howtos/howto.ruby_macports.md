@@ -113,7 +113,7 @@ rvm reinstall 1.9.3 --with-openssl-dir=/opt/local --with-opt-dir=/opt/local
 
 ## PART IV: Update Ruby GEMS and Bundler
 
-Finally, we want to update are [Ruby GEM libraries](https://rubygems.org/), and also install [Bundler](http://bundler.io/) to manage are Ruby GEM libraries.
+Finally, we want to update our [Ruby GEM libraries](https://rubygems.org/), and also install [Bundler](http://bundler.io/) to manage are Ruby GEM libraries.
 
 ```bash
 sudo gem update --system
