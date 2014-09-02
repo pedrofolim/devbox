@@ -78,7 +78,7 @@ As an alternative to MacPorts ```port select --set ruby``` for managing Ruby, we
 
 ### STEP 1: Prerequisite: Update Broken GCC with XCode 4.4
 
-These insructiosn are valid for XCode 4.4.  If you use a later version of XCode, this may not be necessary.  References for this issue and instructions come from [Ruby, RVM and Mountain Lion](https://gist.github.com/zenkay/3237860) and [Upgrading to Mountain Lion - Ruby + MacPorts ](https://coderwall.com/p/pagj2w).
+These instructions are valid for XCode 4.4.  If you use a later version of XCode, this may not be necessary.  References for this issue and instructions come from [Ruby, RVM and Mountain Lion](https://gist.github.com/zenkay/3237860) and [Upgrading to Mountain Lion - Ruby + MacPorts ](https://coderwall.com/p/pagj2w).
 
 ```bash
 sudo port selfupdate
