@@ -24,3 +24,8 @@ The second part to this, is after documenting a recipee on how to install an env
 
 * Ruby-On-Rails
   * [Getting Ruby-on-Rails on Ubuntu](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.rails_ubuntu.md)
+
+### Windows NT Systems
+
+* Ruby
+  * [Installing Ruby 1.9 on Windows 7](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.ruby_windows.md)
