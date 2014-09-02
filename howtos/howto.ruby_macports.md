@@ -2,7 +2,11 @@
 
 These were instructions I researched in utilizing MacPorts to install and manage Ruby Versions.  These Instructions are valid as of September 5th, 2013.  This article highlights a lot of issues that can arise with open source on OS X (especially new releases).
 
-For simple needs, such as a system-wide availability of Ruby on a Server, MacPorts may be all that is needed.  For a web server environment or development environment, any serious shop will undoubtedly use [RVM](http://rvm.io/).  For managing Ruby libraries (GEM), [Bundler](http://bundler.io/) is essential, as GEM libraries will have dependencies on other GEM libraries.
+For simple needs, such as a system-wide availability of Ruby on a general server, MacPorts may be all that is needed.  
+
+For more complex environments, such as a web server environment or development environment, any serious shop will undoubtedly use [RVM](http://rvm.io/).  
+
+For managing Ruby libraries (GEM), [Bundler](http://bundler.io/) is essential, as GEM libraries will have dependencies on other GEM libraries.
 
 ## Requirements
 
