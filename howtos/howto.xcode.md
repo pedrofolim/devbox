@@ -1,4 +1,4 @@
-# Getting XCode on OS X 10.8.5
+# Getting XCode 5.1.1 on OS X 10.8.5
 
 In order to get anywhere in life on a computer you need some compilers, and on OS X this is certainly true.  You need compilers to install numerous open source software available on the Internet.  Package managers such as [MacPorts](https://www.macports.org/) or [Homebrew](http://brew.sh/) require these compilers.
 
