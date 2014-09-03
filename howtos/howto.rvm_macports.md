@@ -29,6 +29,7 @@ Make sure that proper support for running RVM environment are in your startup fi
 
 ```bash
 echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> $HOME/.profile
+source $HOME/.profile
 ```
 
 ### STEP 2: Install your Rubies
