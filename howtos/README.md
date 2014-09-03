@@ -6,9 +6,9 @@ In the future, I hope the pull out some of the more useful How-To documents for 
 
 ## Background
 
-In creating scripting and programming tutorials, I found that many environments do not include standard set of compilers, scripitng engines, virtual machines (Java, .NET), or common up-to-date GNU or POSIX tools.  For this reason, I started documenting how to get these tools onto your system.
+In creating scripting and programming tutorials, I found that many environments do not include standard set of compilers, scripting engines, virtual machines (Java, .NET), or common up-to-date GNU or POSIX tools.  For this reason, I started documenting how to get these tools onto your system.
 
-The second part to this, is after documenting a recipee on how to install an enviornment, I may want to craft some scripts or use a system like [Boxen](https://boxen.github.com/) or other system to install a devbox environment.
+The second part to this, is after documenting a recipe on how to install an environment, I may want to craft some scripts or use a system like [Boxen](https://boxen.github.com/) or other system to install a devbox environment.
 
 
 ## HOWTOs
@@ -30,7 +30,7 @@ The second part to this, is after documenting a recipee on how to install an env
 * Python
   * [Getting Python 2.7 using Homebrew on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.python_homebrew.md)
 
-### Ubuntu (Debian Linux)
+### Ubuntu (Debian Linux flavor)
 
 * Ruby-On-Rails
   * [Getting Ruby-on-Rails on Ubuntu](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.rails_ubuntu.md)
