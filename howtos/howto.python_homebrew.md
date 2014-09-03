@@ -17,7 +17,7 @@ Homebrew needs to be installed before using these instructions. See [Homebrew on
 brew install python
 ```
 
-Note that when installing Python 2.7.  There are some dependencies.  Issuing the above command will install the follwoing Homebrew bottles: 
+Note that when installing Python 2.7.  There are some dependencies.  Issuing the above command will install the following Homebrew bottles: 
 
 * Dependencies:
   * readline-6.3.6.mountain_lion.bottle.tar.gz
