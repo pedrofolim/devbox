@@ -1,4 +1,4 @@
-# Getting Ruby
+# Getting Ruby using MacPorts
 
 These were instructions I researched in utilizing MacPorts to install and manage Ruby Versions.  These Instructions are valid as of September 5th, 2013.  This article highlights a lot of issues that can arise with open source on OS X (especially new releases).
 
