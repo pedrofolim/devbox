@@ -52,7 +52,7 @@ ruby -v
 ruby 2.1.2p95 (2014-05-08 revision 45877) [x86_64-darwin13.0]
 ```
 
-The version such as the one above will be accessed from ```$HOME/.rvm/rubies/ruby-2.1.2/bin/ruby"```.
+The version such as the one above will be accessed from ```$HOME/.rvm/rubies/ruby-2.1.2/bin/```.
 
 ### STEP 4: Update Gems and Install Bundler
 
