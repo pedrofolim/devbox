@@ -31,6 +31,10 @@ You can also see if the package is installed:
 
 ```bash
 yum list installed | grep java-
+```
+
+On my system, this lists:
+```
 java-1.7.0-openjdk.x86_64
 ```
 
@@ -50,7 +54,9 @@ alternatives --display java | grep 'jre:' | awk '{ print $3 }'
 
 On my system, this outputs:
 
-```/usr/lib/jvm/jre-1.7.0-openjdk.x86_64```
+```
+/usr/lib/jvm/jre-1.7.0-openjdk.x86_64
+```
 
 Cent OS 6.5 seems to like ```.bashrc``` so we can append this line to that file.
 
