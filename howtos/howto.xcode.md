@@ -15,6 +15,7 @@ You need to have the following:
 
 ## Assumptions
 
+* Operating System updated to OS X 10.8.5.  See [Updating OS X 10.8 to OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.update_osx_10_8_5.md)
 * Unfiltered connection to Internet
 * All software downloaded will be stored in ```$HOME/Downloads```
 * Clean configuration; no previous version Xcode has been installed.

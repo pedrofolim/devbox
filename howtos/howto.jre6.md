@@ -1,10 +1,10 @@
-# Getting Java 6 on Mac OS 10.8.5
+# Getting Java 6 on Mac OS 10.8
 
 Apple no longer bundles Java with OS X, but you can fetch a version from their support site.
 
 These steps are for getting the default Java SE Runtime Environment 6 from Apple's support site.  Newer versions will come from Oracle.
 
-These instructions are valid (last tested) as of July 13, 2014.
+These instructions are valid as of July 13, 2014 and tested with OS X 10.8.3.
 
 ## Assumptions
 

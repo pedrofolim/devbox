@@ -15,10 +15,15 @@ The second part to this, is after documenting a recipee on how to install an env
 
 ### OS X (Darwin Mach XNU kernel with BSD Unix process model)
 
+* General
+  * [Updating OS X 10.8 to OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.update_osx_10_8_5.md)
+  * [Testing Defaults](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.check_defaults.md) - this tests gcc, cpp, java, bash, ksh, php, perl, ruby, python, tcl, and git versions.  Should you not be happy with antiquated versions, install newer versions.
+* Package Management
+  * [Homebrew on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.homebrew.md)  
 * Compilers (C/C++)
   * [XCode 5.1.1 on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.xcode.md) - These are instructions for getting XCode 5.1.1 on OS X 10.8.5.
 * Java Virtual Machine
-  * [Getting Java 6 on Mac OS 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.jre6.md)    
+  * [Getting Java 6 on Mac OS 10.8](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.jre6.md)    
 * Ruby
   * [Ruby, RVM, Bundler with MacPorts](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.ruby_macports.md) - These are instructions that I crafted back in 2013 for installing Ruby 1.9 on MacPorts with RVM and Bundler.
 
