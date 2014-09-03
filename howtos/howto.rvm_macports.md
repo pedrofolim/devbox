@@ -17,13 +17,20 @@ For managing Ruby libraries (GEM), [Bundler](http://bundler.io/) is essential, a
 
 ## The Steps
 
-### STEP 1: Download and Install RVM
+### STEP 1: Setup Ruby Version Manager
 
 You can do this in just one command:
 
 ```bash
-\curl -sSL https://get.rvm.io | bash -s stable
+curl -sSL https://get.rvm.io | bash -s stable
 ```
+
+Make sure that proper support for running RVM environment are in your startup files.  This can very between systems.  On Mac OS X, you can manually add this:
+
+```bash
+echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"' >> $HOME/.profile
+```
+
 ### STEP 2: Install your Rubies
 
 ```bash
