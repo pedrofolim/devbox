@@ -37,7 +37,7 @@ java-1.7.0-openjdk.x86_64
 If you do not have that package, you can easily install it:
 
 ```bash
-yum install java-1.7.0-openjdk
+sudo yum install java-1.7.0-openjdk
 ```
 
 ### STEP 2: Configure JAVA_HOME
@@ -45,9 +45,12 @@ yum install java-1.7.0-openjdk
 Before we even touch GVM, we need to configure the ```JAVA_HOME``` environment variables.  First we need to find out where it is located:
 
 ```bash
-alternatives --display java | grep 'jre:' | awk '{ print $3}'
-/usr/lib/jvm/jre-1.7.0-openjdk.x86_64
+alternatives --display java | grep 'jre:' | awk '{ print $3 }'
 ```
+
+On my system, this outputs:
+
+```/usr/lib/jvm/jre-1.7.0-openjdk.x86_64```
 
 Cent OS 6.5 seems to like ```.bashrc``` so we can append this line to that file.
 
