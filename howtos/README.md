@@ -27,6 +27,8 @@ The second part to this, is after documenting a recipee on how to install an env
 * Ruby
   * [Ruby, RVM, Bundler with MacPorts](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.ruby_macports.md) - These are instructions that I crafted back in 2013 for installing Ruby 1.9 on MacPorts with RVM and Bundler.
   * [Getting Ruby 2 using Homebrew on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.ruby_homebrew.md)
+* Python
+  * [Getting Python 2.7 using Homebrew on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.python_homebrew.md)
 
 ### Ubuntu (Debian Linux)
 
