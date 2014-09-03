@@ -9,7 +9,7 @@ Homebrew needs to be installed before using these instructions. See [Homebrew on
 ## Assumptions
 
 * Unfiltered connection to Internet
-* Clean configuration; no previous version Ruby, RVM, or Bundler installed.
+* Clean configuration; no previous version Python, VritualEnv, Pip, or Setuptools installed.
 
 ## STEP 1: Install Python using Homebrew
 
