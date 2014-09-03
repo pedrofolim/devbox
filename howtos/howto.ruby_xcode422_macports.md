@@ -1,6 +1,6 @@
-# Getting Ruby using MacPorts
+# Getting Ruby using MacPorts with XCode 4.2.2
 
-These were instructions I researched in utilizing MacPorts to install and manage Ruby Versions.  These Instructions are valid as of September 5th, 2013.  This article highlights a lot of issues that can arise with open source on OS X (especially new releases).
+These were instructions I researched in utilizing [MacPorts](https://www.macports.org/)  to install and manage Ruby Versions.  These Instructions are valid as of September 5th, 2013.  This article highlights a lot of issues that can arise with open source on OS X (especially new releases).
 
 For simple needs, such as a system-wide availability of Ruby on a general server, MacPorts may be all that is needed.  
 
@@ -12,7 +12,7 @@ For managing Ruby libraries (GEM), [Bundler](http://bundler.io/) is essential, a
 
 XCode needs to be installed prior beginning
 
-* [XCode 5.1.1 on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.xcode.md) - These are instructions for getting XCode 5.1.1 on OS X 10.8.5.
+* XCode 4.2.2 
 
 ## Assumptions
 

@@ -1,4 +1,4 @@
-# Getting Ruby 2 using Homebrew on OS X 10.8.5
+# Getting Ruby using Homebrew
 
 This is a simple installation of Ruby using Homebrew.  These instructions were tested on July 13, 2014.
 
