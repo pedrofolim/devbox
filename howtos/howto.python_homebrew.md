@@ -10,6 +10,7 @@ Homebrew needs to be installed before using these instructions. See [Homebrew on
 
 * Unfiltered connection to Internet
 * Clean configuration; no previous version Python, VritualEnv, Pip, or Setuptools installed.
+* Installation is from a user account, not ```root```.
 
 ## STEP 1: Install Python using Homebrew
 

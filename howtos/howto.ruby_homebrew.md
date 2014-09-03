@@ -10,6 +10,7 @@ Homebrew needs to be installed before using these instructions. See [Homebrew on
 
 * Unfiltered connection to Internet
 * Clean configuration; no previous version Ruby, RVM, or Bundler installed.
+* Installation is from a user account, not ```root```.
 
 ## STEP 1: Install Ruby using Homebrew
 

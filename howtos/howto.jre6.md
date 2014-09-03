@@ -10,6 +10,7 @@ These instructions are valid as of July 13, 2014 and tested with OS X 10.8.3.
 
 * Unfiltered connection to Internet
 * All software downloaded will be stored in ```$HOME/Downloads```
+* Installation is from a user account, not ```root```.
 * Clean configuration; no previous version Java has been installed.
 
 ## STEPS

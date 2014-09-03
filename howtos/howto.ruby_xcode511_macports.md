@@ -18,7 +18,7 @@ XCode and MacPorts need to be previously instaleld prior to beginning. needs to 
 ## Assumptions
 
 * Unfiltered connection to Internet
-* All software downloaded will be stored in ```$HOME/Downloads```
+* Installation is from a user account, not ```root```.
 * Clean configuration; no previous version Ruby, RVM, or Bundler installed.
 
 ## The Steps

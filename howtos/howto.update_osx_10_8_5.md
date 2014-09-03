@@ -9,7 +9,7 @@ To install the update for OS X 10.8.5, you can use *App Store* or you can manual
 * Operating System is OS X 10.8.x version that is earlier than OS X 10.8.5
 * Unfiltered connection to Internet
 * All software downloaded will be stored in ```$HOME/Downloads```
-* Clean configuration; no previous version Ruby, RVM, or Bundler installed.
+* Installation is from a user account, not ```root```.
 
 ## STEPS
 

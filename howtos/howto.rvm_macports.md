@@ -7,12 +7,12 @@ For managing Ruby libraries (GEM), [Bundler](http://bundler.io/) is essential, a
 ## Requirements
 
 1. [XCode 5.1.1 on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.xcode.md) - These are instructions for getting XCode 5.1.1 on OS X 10.8.5.
-2. [MacPorts on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.macports.md)
+2. [MacPorts on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.macports.md) - These are instructions for installing MacPorts.
 
 ## Assumptions
 
 * Unfiltered connection to Internet
-* All software downloaded will be stored in ```$HOME/Downloads```
+* Installation is from a user account, not ```root```.
 * Clean configuration; no previous version Ruby, RVM, or Bundler installed.
 
 ## The Steps

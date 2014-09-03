@@ -7,6 +7,7 @@
 * XCode 5.1.1 is installed. See [XCode 5.1.1 on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.xcode.md)
 * Unfiltered connection to Internet
 * All software downloaded will be stored in ```$HOME/Downloads```
+* Installation is from a user account, not ```root```.
 * Clean configuration; no previous version of Homebrew has been installed.
 
 ## STEPS
@@ -22,7 +23,7 @@ curl -O https://distfiles.macports.org/MacPorts/MacPorts-2.3.1-10.8-MountainLion
 ### STEP 2: Install Mac Ports
 
 ```bash
-sudo -S installer -verbose -pkg MacPorts-2.3.1-10.8-MountainLion.pkg -target /
+sudo -S installer -verbose -pkg $HOME/Downloads/MacPorts-2.3.1-10.8-MountainLion.pkg -target /
 ```
 
 ### STEP 3: Configure and Source Login Scripts
