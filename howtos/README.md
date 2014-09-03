@@ -36,6 +36,11 @@ The second part to this, is after documenting a recipe on how to install an envi
 * **Ruby-On-Rails**
   * [Getting Ruby-on-Rails on Ubuntu](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.rails_ubuntu.md)
 
+### Cent OS 6.5 (RHEL6 clone)
+
+* **Groovy**
+  * [Getting Groovy with GVM on Cent OS 6](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.groovy_gvm_centos6.md)
+
 ### Windows NT Systems
 
 * **Ruby**
