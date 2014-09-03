@@ -21,7 +21,7 @@ Target: x86_64-apple-darwin12.5.0
 Thread model: posix
 ```
 
-## Checking LLVM C++ COmpiler
+## Checking LLVM C++ Compiler
 
 ```bash
 cpp --version
