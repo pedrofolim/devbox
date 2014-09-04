@@ -15,8 +15,6 @@ These are a laundry list of defaults that OS X 10.8.5, XCode 5.1.1, and Apple's 
 
 ### Checking GNU C Compiler
 
-It seems like Apple is forcing us to use LLVM compiler, which has caused problems with some open source code, namely various Ruby GEMs.
-
 ```bash
 gcc --version
 Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
@@ -24,6 +22,8 @@ Apple LLVM version 5.1 (clang-503.0.40) (based on LLVM 3.4svn)
 Target: x86_64-apple-darwin12.5.0
 Thread model: posix
 ```
+
+It seems like Apple is forcing us to use LLVM compiler, which has caused problems with some open source code, namely various Ruby GEMs.
 
 ### Checking LLVM C++ Compiler
 
@@ -45,7 +45,7 @@ Java(TM) SE Runtime Environment (build 1.6.0_65-b14-466.1-11M4716)
 Java HotSpot(TM) 64-Bit Server VM (build 20.65-b04-466.1, mixed mode)
 ```
 
-The Java 6 platform was released in 2006 and Apple offers Java SE 6 Update 65.  Oracle has not publically made newer versions with 33 security fixes available to the public, so users will will have to live with security vulnerabilities with Java 6.
+The Java 6 platform was released in 2006 and Apple offers Java SE 6 Update 65.  Oracle has not publically made newer versions (now at Java SE 6 Update 81) with 33 security fixes available to the public, so users will will have to live with security vulnerabilities with Java 6.
 
 Oracle has released Java SE 7 (2011) and Java SE 8 (2014) to the public, which can be downloaded for OS X.  The current versions of these are Java SE 7 Update 67 and Java SE 8 Update 20.
 
@@ -128,7 +128,7 @@ Apple's supplied default bash is really old, and the current one is at Bash 4.3.
   version         sh (AT&T Research) 93u 2011-02-08
 ```
 
-There is a more recent version of "93u+ 2012-08-01".
+There is a more recent version of "93u+ 2012-08-01" is available.
 
 ### Checking Z Shell Version
 
