@@ -117,7 +117,7 @@ Copyright (C) 2007 Free Software Foundation, Inc.
 
 Apple's supplied default bash is really old, and the current one is at Bash 4.3.
 
-### Checking Korn Shell Version
+### Checking Z Shell Version
 
 ```bash
 /usr/bin/ksh --version
