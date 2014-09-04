@@ -97,6 +97,16 @@ echo 'puts $tcl_version;exit 0' | /usr/bin/tclsh
 
 ## Shells
 
+### Checking Default Shell Version
+
+```
+/bin/sh --version
+GNU bash, version 3.2.48(1)-release (x86_64-apple-darwin12)
+Copyright (C) 2007 Free Software Foundation, Inc.
+```
+
+This uses the antiquated bash running in strict shell mode.  This may cause problems to create portiable POSIX shell scripts, as Bash-only features may work.  An alternative would be to use Korn shell as ```sh```, as that has worked better in strict shell mode, or to install ```dash```, which only runs in POSIX shell mode.
+
 ### Checking Bash (Bourne Again Shell) Version
 
 ```bash
@@ -111,7 +121,7 @@ Apple's supplied default bash is really old, and the current one is at Bash 4.3.
 
 ```bash
 /usr/bin/ksh --version
-  **version**         sh (AT&T Research) 93u 2011-02-08
+  version         sh (AT&T Research) 93u 2011-02-08
 ```
 
 There is a more recent version of "93u+ 2012-08-01".
@@ -122,7 +132,6 @@ There is a more recent version of "93u+ 2012-08-01".
 /usr/bin/zsh --version
 zsh 4.3.11 (i386-apple-darwin12.0)
 ```
-
 
 ## Tools
 
