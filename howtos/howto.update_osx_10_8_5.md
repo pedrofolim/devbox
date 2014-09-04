@@ -2,7 +2,7 @@
 
 My computer (Macbook Retina) came with OS X 10.8.3 pre-installed, and OS X 10.8.5 is the latest available.
 
-To install the update for OS X 10.8.5, you can use *App Store* or you can manually download this, and install this yourself.  I prefer to manually install, as it puts the control in the hands of the user, and saves me time to download gigabytes should I ever need to install this again.
+To install the update for OS X 10.8.5, you can use *App Store* or you can manually download this, and install this yourself.  I prefer to manually install the update, as it puts the control in the hands of the user, and saves me time to download gigabytes should I ever need to install this again.
 
 ## Assumptions
 
@@ -26,7 +26,7 @@ hdiutil mount $HOME/Downloads/OSXUpdCombo10.8.5.dmg
 sudo -S installer -verbose -pkg "/Volumes/OS X 10.8.5 Update Combo/OSXUpdCombo10.8.5.pkg" -target /
 ```
 
-This shoudl print out several lines ending with something like:
+This should print out several lines ending with something like:
 
 ```
 installer: The software was successfully installed......

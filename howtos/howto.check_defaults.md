@@ -1,6 +1,6 @@
 # Testing Defaults
 
-These are a laundry list of defaults that OS X 10.8.5 and XCode 5.1.1
+These are a laundry list of defaults that OS X 10.8.5, XCode 5.1.1, and Apple's supplied Java 6 SE.
 
 
 ## Assumptions
@@ -9,9 +9,13 @@ These are a laundry list of defaults that OS X 10.8.5 and XCode 5.1.1
 * XCode 5.1.1 is installed. See [XCode 5.1.1 on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.xcode.md).
 * Java 6 SE installed from Apple. See [Getting Java 6 on Mac OS 10.8](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.jre6.md).
 
-## The Tests
+# The Tests
 
-## Checking GNU C Compiler
+## Compilers
+
+### Checking GNU C Compiler
+
+It seems like Apple is forcing us to use LLVM compiler, which has caused problems with some open source code, namely various Ruby GEMs.
 
 ```bash
 gcc --version
@@ -21,7 +25,7 @@ Target: x86_64-apple-darwin12.5.0
 Thread model: posix
 ```
 
-## Checking LLVM C++ Compiler
+### Checking LLVM C++ Compiler
 
 ```bash
 cpp --version
@@ -30,52 +34,9 @@ Target: x86_64-apple-darwin12.5.0
 Thread model: posix
 ```
 
-## Checking Perl Version
+## Application Virtual Machines
 
-```bash
-perl -version | head -3
-
-This is perl 5, version 12, subversion 4 (v5.12.4) built for darwin-thread-multi-2level
-(with 2 registered patches, see perl -V for more detail)
-```
-
-## Checking Ruby Version
-
-```bash
-ruby --version
-ruby 1.8.7 (2012-02-08 patchlevel 358) [universal-darwin12.0]
-```
-
-## Checking Python Version
-
-```bash
-python --version
-Python 2.7.2
-```
-
-## Checking Bash (Bourne Again Shell) Version
-
-```bash
-bash --version
-GNU bash, version 3.2.48(1)-release (x86_64-apple-darwin12)
-Copyright (C) 2007 Free Software Foundation, Inc.
-```
-
-## Checking Korn Shell Version
-
-```bash
-ksh --version
-  version         sh (AT&T Research) 93u 2011-02-08
-```
-
-## Checking TCL (Tool Command Language)
-
-```bash
-echo 'puts $tcl_version;exit 0' | tclsh
-8.5
-```
-
-## Checking Java Virtual Machine Environment
+### Checking Java Virtual Machine Environment
 
 ```bash
 java -version
@@ -84,7 +45,18 @@ Java(TM) SE Runtime Environment (build 1.6.0_65-b14-466.1-11M4716)
 Java HotSpot(TM) 64-Bit Server VM (build 20.65-b04-466.1, mixed mode)
 ```
 
-## Checking PHP Version
+## Scripting Engines
+
+### Checking Perl Version
+
+```bash
+perl -version | head -3
+
+This is perl 5, version 12, subversion 4 (v5.12.4) built for darwin-thread-multi-2level
+(with 2 registered patches, see perl -V for more detail)
+```
+
+### Checking PHP Version
 
 ```bash
 php -v
@@ -93,7 +65,49 @@ Copyright (c) 1997-2013 The PHP Group
 Zend Engine v2.3.0, Copyright (c) 1998-2013 Zend Technologies
 ```
 
-## Checking GIT Version
+### Checking Python Version
+
+```bash
+python --version
+Python 2.7.2
+```
+
+### Checking Ruby Version
+
+```bash
+ruby --version
+ruby 1.8.7 (2012-02-08 patchlevel 358) [universal-darwin12.0]
+```
+
+### Checking TCL (Tool Command Language)
+
+```bash
+echo 'puts $tcl_version;exit 0' | tclsh
+8.5
+```
+
+## Shells
+
+### Checking Bash (Bourne Again Shell) Version
+
+```bash
+bash --version
+GNU bash, version 3.2.48(1)-release (x86_64-apple-darwin12)
+Copyright (C) 2007 Free Software Foundation, Inc.
+```
+
+### Checking Korn Shell Version
+
+```bash
+ksh --version
+  version         sh (AT&T Research) 93u 2011-02-08
+```
+
+
+
+## Tools
+
+### Checking GIT Version
 
 ```bash
 git --version
