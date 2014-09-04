@@ -119,7 +119,9 @@ GNU bash, version 3.2.48(1)-release (x86_64-apple-darwin12)
 Copyright (C) 2007 Free Software Foundation, Inc.
 ```
 
-Apple's supplied default bash is really old, and the current one is at Bash 4.3.
+Apple's supplied default bash is a really old release from 2009, and the current one is at Bash 4.3 (2014).
+
+Reference: [GNU Bash FTP](https://ftp.gnu.org/gnu/bash/)
 
 ### Checking Korn Shell Version
 
@@ -164,6 +166,6 @@ git version 1.8.5.2 (Apple Git-48)
 
 ### Sed
 
-The ```sed``` supplied by Apple is an BSD version, which has problems using the ```-i``` and ```-E``` together.  It's simply buggles.
+The ```sed``` supplied by Apple is a BSD version, which has problems using the ```-i``` and ```-E``` together.  It's simply buggles.
 
 Grabbing GNU Sed will alleviate the pain of dealing with OS X challenged sed.
