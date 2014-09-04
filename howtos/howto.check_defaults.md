@@ -139,9 +139,31 @@ zsh 4.3.11 (i386-apple-darwin12.0)
 
 ## Tools
 
+### Checking bc Version
+
+```bash
+/usr/bin/bc --version | head -1
+bc 1.06
+```
+
+### Checkng Curl Version
+
+```bash
+/usr/bin/curl --version
+curl 7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8y zlib/1.2.5
+Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtsp smtp smtps telnet tftp 
+Features: AsynchDNS GSS-Negotiate IPv6 Largefile NTLM NTLM_WB SSL libz 
+```
+
 ### Checking GIT Version
 
 ```bash
 /usr/bin/git --version
 git version 1.8.5.2 (Apple Git-48)
 ```
+
+### Sed
+
+The ```sed``` supplied by Apple is an BSD version, which has problems using the ```-i``` and ```-E``` together.  It's simply buggles.
+
+Grabbing GNU Sed will alleviate the pain of dealing with OS X challenged sed.
