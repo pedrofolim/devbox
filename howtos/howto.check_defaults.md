@@ -47,6 +47,15 @@ Java HotSpot(TM) 64-Bit Server VM (build 20.65-b04-466.1, mixed mode)
 
 ## Scripting Engines
 
+### Checking AWK Version
+
+```bash
+/usr/bin/awk --version
+awk version 20070501
+```
+
+This version is the antiquated BSD version.  GNU Awk 4.1.1 is out and supports more features.
+
 ### Checking Perl Version
 
 ```bash
@@ -75,14 +84,14 @@ Python 2.7.2
 ### Checking Ruby Version
 
 ```bash
-ruby --version
+/usr/bin/ruby --version
 ruby 1.8.7 (2012-02-08 patchlevel 358) [universal-darwin12.0]
 ```
 
 ### Checking TCL (Tool Command Language)
 
 ```bash
-echo 'puts $tcl_version;exit 0' | tclsh
+echo 'puts $tcl_version;exit 0' | /usr/bin/tclsh
 8.5
 ```
 
@@ -91,18 +100,28 @@ echo 'puts $tcl_version;exit 0' | tclsh
 ### Checking Bash (Bourne Again Shell) Version
 
 ```bash
-bash --version
+/bin/bash --version
 GNU bash, version 3.2.48(1)-release (x86_64-apple-darwin12)
 Copyright (C) 2007 Free Software Foundation, Inc.
 ```
 
+Apple's supplied default bash is really old, and the current one is at Bash 4.3.
+
 ### Checking Korn Shell Version
 
 ```bash
-ksh --version
-  version         sh (AT&T Research) 93u 2011-02-08
+/usr/bin/ksh --version
+  **version**         sh (AT&T Research) 93u 2011-02-08
 ```
 
+There is a more recent version of "93u+ 2012-08-01".
+
+### Checking Korn Shell Version
+
+```bash
+/usr/bin/zsh --version
+zsh 4.3.11 (i386-apple-darwin12.0)
+```
 
 
 ## Tools
