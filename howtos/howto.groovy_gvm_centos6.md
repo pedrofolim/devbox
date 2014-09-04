@@ -66,6 +66,12 @@ echo export JAVA_HOME=/usr/lib/jvm/jre-1.7.0-openjdk.x86_64 >> $HOME/.bashrc
 
 Note that that you will need update ```JAVA_HOME``` if you change your version of Java.
 
+If you are want a dynamically configured ```JAVA_HOME```, you could alternatively configure this in your ```~/.bashrc```.  Note that his is *experimental*, and only tested with the above version:
+
+```bash
+export JAVA_HOME=$(alternatives --display java | grep 'jre:' | awk '{ print $3 }')
+```
+
 ### STEP 3: Install GVM
 
 From a user account where you want to use GVM, run these commands:
@@ -77,7 +83,7 @@ source $HOME/.bashrc
 
 ### STEP 4: Install Groovy
 
-Now we can install the latest Groovy, which as of this writing (2014-08-03) is Grrovy 2.3.6.
+Now we can install the latest Groovy, which as of this writing (2014-08-03) is Groovy 2.3.6.
 
 ```bash
 gvm install groovy
