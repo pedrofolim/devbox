@@ -60,7 +60,7 @@ sudo port select --set ruby ruby20
 
 ```
 ruby -v
-``
+```
 
 ### STEP 5: Update Ruby GEMS and Bundler
 
