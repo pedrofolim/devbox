@@ -45,6 +45,12 @@ Java(TM) SE Runtime Environment (build 1.6.0_65-b14-466.1-11M4716)
 Java HotSpot(TM) 64-Bit Server VM (build 20.65-b04-466.1, mixed mode)
 ```
 
+The Java 6 platform was released in 2006 and Apple offers Java SE 6 Update 65.  Oracle has not publically made newer versions with 33 security fixes available to the public, so users will will have to live with security vulnerabilities with Java 6.
+
+Oracle has released Java SE 7 (2011) and Java SE 8 (2014) to the public, which can be downloaded for OS X.  The current versions of these are Java SE 7 Update 67 and Java SE 8 Update 20.
+
+**Reference**: [Java Version History](http://en.wikipedia.org/wiki/Java_version_history)
+
 ## Scripting Engines
 
 ### Checking AWK Version
@@ -59,16 +65,14 @@ This version is the antiquated BSD version.  GNU Awk 4.1.1 is out and supports m
 ### Checking Perl Version
 
 ```bash
-perl -version | head -3
-
+/usr/bin/perl --version | head -2 | sed '1d'
 This is perl 5, version 12, subversion 4 (v5.12.4) built for darwin-thread-multi-2level
-(with 2 registered patches, see perl -V for more detail)
 ```
 
 ### Checking PHP Version
 
 ```bash
-php -v
+/usr/bin/php --version
 PHP 5.3.26 (cli) (built: Jul  7 2013 19:05:08) 
 Copyright (c) 1997-2013 The PHP Group
 Zend Engine v2.3.0, Copyright (c) 1998-2013 Zend Technologies
@@ -77,7 +81,7 @@ Zend Engine v2.3.0, Copyright (c) 1998-2013 Zend Technologies
 ### Checking Python Version
 
 ```bash
-python --version
+/usr/bin/python --version
 Python 2.7.2
 ```
 
@@ -138,6 +142,6 @@ zsh 4.3.11 (i386-apple-darwin12.0)
 ### Checking GIT Version
 
 ```bash
-git --version
+/usr/bin/git --version
 git version 1.8.5.2 (Apple Git-48)
 ```
