@@ -15,8 +15,8 @@ The second part to this, is after documenting a recipe on how to install an envi
 ### OS X (Darwin Mach XNU kernel with BSD Unix process model)
 
 * **General**
-  * [Updating OS X 10.8 to OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.update_osx_10_8_5.md)
-  * [Testing Defaults](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.check_defaults.md) - this tests gcc, cpp, java, bash, ksh, php, perl, ruby, python, tcl, and git versions.  Should you not be happy with antiquated versions, install newer versions.
+  * [Updating OS X 10.8 to OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.update.md)
+  * [Testing Defaults](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.defaults.md) - this tests gcc, cpp, java, bash, ksh, php, perl, ruby, python, tcl, and git versions.  Should you not be happy with antiquated versions, install newer versions.
 * **Package Management**
   * [Homebrew on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.homebrew.md)
   * [MacPorts on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.macports.md)
