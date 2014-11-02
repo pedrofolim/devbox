@@ -15,21 +15,21 @@ The second part to this, is after documenting a recipe on how to install an envi
 ### OS X (Darwin Mach XNU kernel with BSD Unix process model)
 
 * **General**
-  * [Updating OS X 10.8 to OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.update_osx_10_8_5.md)
-  * [Testing Defaults](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.check_defaults.md) - this tests gcc, cpp, java, bash, ksh, php, perl, ruby, python, tcl, and git versions.  Should you not be happy with antiquated versions, install newer versions.
+  * [Updating OS X 10.8 to OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.update_osx_10_8_5.md)
+  * [Testing Defaults](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.check_defaults.md) - this tests gcc, cpp, java, bash, ksh, php, perl, ruby, python, tcl, and git versions.  Should you not be happy with antiquated versions, install newer versions.
 * **Package Management**
-  * [Homebrew on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.homebrew.md)
-  * [MacPorts on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.macports.md)
+  * [Homebrew on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.homebrew.md)
+  * [MacPorts on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.macports.md)
 * **Compilers (C/C++)**
-  * [XCode 5.1.1 on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.xcode.md) - These are instructions for getting XCode 5.1.1 on OS X 10.8.5.
+  * [XCode 5.1.1 on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.xcode.md) - These are instructions for getting XCode 5.1.1 on OS X 10.8.5.
 * **Java Virtual Machine**
-  * [Getting Java 6 on Mac OS 10.8](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.jre6.md) - This is the designated Java 6 SE supplied from Apple.
+  * [Getting Java 6 on Mac OS 10.8](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.jre6.md) - This is the designated Java 6 SE supplied from Apple.
 * **Ruby**
   * [Using RVM on MacPorts](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.rvm_macports.md) - Using RVM (with MacPorts) to setup a Ruby environment.
-  * [Getting Ruby using MacPorts](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.ruby_xcode511_macports.md) - Using MacPorts to setup a Ruby environment.
-  * [Getting Ruby using Homebrew](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.ruby_homebrew.md) - Using Homebrew to setup a Ruby environment.
+  * [Getting Ruby using MacPorts](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.ruby_xcode511_macports.md) - Using MacPorts to setup a Ruby environment.
+  * [Getting Ruby using Homebrew](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.ruby_homebrew.md) - Using Homebrew to setup a Ruby environment.
 * **Python**
-  * [Getting Python 2.7 using Homebrew on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.python_homebrew.md)
+  * [Getting Python 2.7 using Homebrew on OS X 10.8.5](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.python_homebrew.md)
 
 ### Ubuntu (Debian Linux flavor)
 
