@@ -25,7 +25,7 @@ The second part to this, is after documenting a recipe on how to install an envi
 * **Java Virtual Machine**
   * [Getting Java 6 on Mac OS 10.8](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.jre6.md) - This is the designated Java 6 SE supplied from Apple.
 * **Ruby**
-  * [Using RVM on MacPorts](https://github.com/darkn3rd/devbox/blob/master/howtos/howto.rvm_macports.md) - Using RVM (with MacPorts) to setup a Ruby environment.
+  * [Using RVM on MacPorts](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.rvm_macports.md) - Using RVM (with MacPorts) to setup a Ruby environment.
   * [Getting Ruby using MacPorts](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.ruby_xcode511_macports.md) - Using MacPorts to setup a Ruby environment.
   * [Getting Ruby using Homebrew](https://github.com/darkn3rd/devbox/blob/master/howtos/osx_10_8_5/howto.ruby_homebrew.md) - Using Homebrew to setup a Ruby environment.
 * **Python**
