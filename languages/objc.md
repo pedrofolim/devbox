@@ -1,6 +1,6 @@
 # Objective-C Foundation Environment
 
-This shows how to create a basic Objective-C environment using the Foundation libraries defined from OPENSTEP specification of ages past. You canuse native [Cocoa framework](https://developer.apple.com/technologies/mac/cocoa.html) libraries or [GNUStep](http://www.gnu.org/software/gnustep/).
+This shows how to create a basic Objective-C environment using the Foundation libraries defined from OPENSTEP specification of ages past. You can use native [Cocoa framework](https://developer.apple.com/technologies/mac/cocoa.html) libraries or [GNUStep](http://www.gnu.org/software/gnustep/).
 
 First, let's create the typically "Hello World" program and call it `hello.m`.
 
