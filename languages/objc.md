@@ -2,7 +2,7 @@
 
 This shows how to create a basic Objective-C environment using the Foundation libraries defined from OPENSTEP specification of ages past. You can use native [Cocoa framework](https://developer.apple.com/technologies/mac/cocoa.html) libraries or [GNUStep](http://www.gnu.org/software/gnustep/).
 
-First, let's create the typically "Hello World" program and call it `hello.m`.
+First, let's create the typical "Hello World" program and call it `hello.m`.
 
 ```objective-c
 #import <Foundation/Foundation.h>
@@ -23,7 +23,21 @@ int main (int argc, const char * argv[])
 
 ## OS X 10.8.5
 
-On OS X 10.8.5 (*Mountain Lion*), you can download XCode 5.1.1 with the corresponding command-line tools.
+On OS X 10.8.5 (*Mountain Lion*), you can download XCode 5.1.1 `xcode_5.1.1.dmg` with the corresponding command-line tools, such as April 2014 command line tools from http://developer.appple.com.
+
+```bash
+$ # XCode Fresh Installation
+$ hdiutil mount ~/Downloads/xcode_5.1.1.dmg
+$ sudo cp -R "/Volumes/Xcode/Xcode.app" /Applications
+$ hdiutil unmount /Volumes/Xcode
+$ sudo xcodebuild -license
+$ # Command Lines TOols Install
+$ hdiutil mount  ~/Downloads/command_line_tools_for_osx_mountain_lion_april_2014.dmg
+$ sudo -S installer -verbose -pkg "/Volumes/Command Line Tools (Mountain Lion)/Command Line Tools (Mountain Lion).mpkg" -target /
+$ hdiutil unmount "/Volumes/Command Line Tools (Mountain Lion)"
+```
+
+
 
 After these are install, you can simply do the following:
 
